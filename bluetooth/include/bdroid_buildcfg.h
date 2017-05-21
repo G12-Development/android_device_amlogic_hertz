@@ -19,7 +19,4 @@
 
 #define BTM_BLE_SCAN_SLOW_INT_1 512
 
-/*fix r311&r321 bt not open*/
-#define KERNEL_MISSING_CLOCK_BOOTTIME_ALARM TRUE
-
 #endif
