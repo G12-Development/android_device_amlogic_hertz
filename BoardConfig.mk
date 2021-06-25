@@ -10,3 +10,6 @@ DEVICE_PATH := device/bananapi/m5
 
 ## Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := m5
+
+## DTB
+TARGET_DTB_NAME := sm1_s905y3_bananapim5
