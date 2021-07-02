@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+TARGET_HAS_TEE := false
+
 # Inherit some common AOSP stuff
 $(call inherit-product, device/google/atv/products/atv_base.mk)
 
