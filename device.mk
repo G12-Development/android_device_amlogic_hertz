@@ -7,3 +7,7 @@
 DEVICE_PATH := device/bananapi/m5
 
 $(call inherit-product, device/amlogic/g12-common/g12.mk)
+
+## Factory
+PRODUCT_HOST_PACKAGES += \
+    aml_image_packer
