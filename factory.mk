@@ -40,6 +40,9 @@ ifeq ("$(wildcard $(FACTORY_PATH)/u-boot.bin)","")
 else
 	$(hide) $(call aml-symlink-file, $(FACTORY_PATH)/u-boot.bin)
 endif
+	$(hide) $(call aml-symlink-file, $(FACTORY_PATH)/u-boot.bin.sd.bin)
+	$(hide) $(call aml-symlink-file, $(FACTORY_PATH)/u-boot.bin.usb.bl2)
+	$(hide) $(call aml-symlink-file, $(FACTORY_PATH)/u-boot.bin.usb.tpl)
 	$(hide) $(call aml-symlink-file, $(PRODUCT_OUT)/logo.img)
 	$(hide) $(call aml-symlink-file, $(FACTORY_PATH)/aml_sdc_burn.ini)
 	$(hide) $(call aml-symlink-file, $(FACTORY_PATH)/image.cfg)
