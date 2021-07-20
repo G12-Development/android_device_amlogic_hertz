@@ -16,12 +16,12 @@ $(call inherit-product, vendor/lineage/config/common_full_tv.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_BRAND := bananapi
-PRODUCT_DEVICE := m5
+PRODUCT_BRAND := DroidLogic
+PRODUCT_DEVICE := hertz
 PRODUCT_GMS_CLIENTID_BASE := android-askey-tv
-PRODUCT_MANUFACTURER := bananapi
-PRODUCT_MODEL := BPI-M5
-PRODUCT_NAME := lineage_m5
+PRODUCT_MANUFACTURER := DroidLogic
+PRODUCT_MODEL := hertz
+PRODUCT_NAME := lineage_hertz
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=adt3 \

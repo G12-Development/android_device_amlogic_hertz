@@ -8,9 +8,9 @@
 
 set -e
 
-export DEVICE=m5
+export DEVICE=hertz
 export DEVICE_COMMON=g12-common
 export VENDOR_COMMON=amlogic
-export VENDOR_DEVICE=bananapi
+export VENDOR_DEVICE=amlogic
 
 "./../../${VENDOR_COMMON}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"

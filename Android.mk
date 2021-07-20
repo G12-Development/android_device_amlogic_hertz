@@ -4,9 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-ifeq ($(TARGET_DEVICE), m5)
+LOCAL_PATH := device/amlogic/hertz
 
-LOCAL_PATH := $(call my-dir)
+ifeq ($(TARGET_DEVICE), hertz)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
