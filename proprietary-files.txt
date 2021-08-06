@@ -1,0 +1,9 @@
+# Wifi
+vendor/etc/wifi/6255/config.txt
+vendor/etc/wifi/6255/fw_bcm43455c0_ag_apsta.bin
+vendor/etc/wifi/6255/fw_bcm43455c0_ag.bin
+vendor/etc/wifi/6255/fw_bcm43455c0_ag_p2p.bin
+vendor/etc/wifi/6255/fw_bcm43456c5_ag_apsta.bin
+vendor/etc/wifi/6255/fw_bcm43456c5_ag.bin
+vendor/etc/wifi/6255/nvram_ap6255.txt
+vendor/etc/wifi/6255/nvram_ap6256.txt
