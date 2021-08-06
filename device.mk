@@ -30,7 +30,3 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay
 
-## HDMI CEC
-PRODUCT_PACKAGES += \
-    hwcomposer.amlogic \
-    gralloc.amlogic
