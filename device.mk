@@ -8,7 +8,7 @@ DEVICE_PATH := device/amlogic/hertz
 
 $(call inherit-product, vendor/amlogic/hertz/hertz-vendor.mk)
 
-$(call inherit-product, device/amlogic/g12-common/g12.mk)
+$(call inherit-product, device/amlogic/gx-common/gx.mk)
 
 ## Factory
 PRODUCT_HOST_PACKAGES += \

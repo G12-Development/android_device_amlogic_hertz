@@ -9,7 +9,7 @@
 set -e
 
 export DEVICE=hertz
-export DEVICE_COMMON=g12-common
+export DEVICE_COMMON=gx-common
 export VENDOR_COMMON=amlogic
 export VENDOR_DEVICE=amlogic
 
