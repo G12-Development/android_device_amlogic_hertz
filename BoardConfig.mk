@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-include device/amlogic/gx-common/BoardConfigCommon.mk
+include vendor/amlogic/hertz/BoardConfigVendor.mk
 
 DEVICE_PATH := device/amlogic/hertz
 
@@ -16,40 +16,24 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 
 ## Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := hertz
-GPU_TYPE := t82x
-GPU_ARCH := midgard
-
-TARGET_AMLOGIC_SOC := gxm
 
 ## DTB
 TARGET_DTB_NAME := hertz_3g
 
-# Graphics
-TARGET_USE_OSS_GRAPHIC := true
-TARGET_USE_OSS_INTERFACES := true
+# GPU
+TARGET_AMLOGIC_GPU_ARCH := midgard
 
-USE_OPENGL_RENDERER := true
-NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
-MAX_VIRTUAL_DISPLAY_DIMENSION := 1920
-TARGET_APP_LAYER_USE_CONTINUOUS_BUFFER := false
-TARGET_USE_DEFAULT_HDR_PROPERTY := true
+# Partitions
+BOARD_PRODUCTIMAGE_PARTITION_SIZE := 134217728
+TARGET_COPY_OUT_PRODUCT := product
+BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
 
-#MESONHWC CONFIG
-USE_HWC2 := true
-TARGET_USES_HWC2 := true
-HWC_DISPLAY_NUM := 1
-HWC_PRIMARY_FRAMEBUFFER_WIDTH := 1920
-HWC_PRIMARY_FRAMEBUFFER_HEIGHT := 1080
-#HWC_EXTEND_FRAMEBUFFER_WIDTH := 1920
-#HWC_EXTEND_FRAMEBUFFER_HEIGHT := 1080
-HWC_PRIMARY_CONNECTOR_TYPE := "hdmi"
-#HWC_EXTEND_CONNECTOR_TYPE := "panel"
-#HWC_ENABLE_HEADLESS_MODE := true
-#HWC_ENABLE_SOFTWARE_VSYNC := true
-#HWC_ENABLE_PRIMARY_HOTPLUG := true
-#HWC_ENABLE_SECURE_LAYER_PROCESS := true
-HWC_DISABLE_CURSOR_PLANE := true
+## Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
+# SOC
+TARGET_AMLOGIC_SOC := gxm
+TARGET_BOARD_PLATFORM := gxm
 
 ## Wi-Fi
 BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_bcmdhd
@@ -60,3 +44,7 @@ WIFI_DRIVER_FW_PATH_AP := "/vendor/etc/wifi/6255/fw_bcm43455c0_ag.bin"
 WIFI_DRIVER_FW_PATH_STA := "vendor/etc/wifi/6255/fw_bcm43455c0_ag_apsta.bin"
 WIFI_DRIVER_FW_PATH_PARAM := "/sys/module/dhd/parameters/firmware_path"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
+WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
+
+## Include the common tree BoardConfig makefile
+include device/amlogic/gx-common/BoardConfigCommon.mk
