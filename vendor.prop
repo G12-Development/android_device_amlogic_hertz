@@ -4,5 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Bluetooth
+ro.boot.btmacaddr=22:22:ce:d2:ca:13
+
 ## Graphics
 ro.opengles.version=196610

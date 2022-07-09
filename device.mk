@@ -15,6 +15,7 @@ PRODUCT_HOST_PACKAGES += \
     aml_image_packer
 
 ## Bluetooth
+BOARD_HAVE_BLUETOOTH := true
 PRODUCT_PACKAGES += \
     libbt-vendor
 
