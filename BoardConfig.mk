@@ -4,8 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-include vendor/amlogic/hertz/BoardConfigVendor.mk
-
 DEVICE_PATH := device/amlogic/hertz
 
 ## Bluetooth
@@ -48,3 +46,5 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 
 ## Include the common tree BoardConfig makefile
 include device/amlogic/gx-common/BoardConfigCommon.mk
+
+include vendor/amlogic/hertz/BoardConfigVendor.mk
