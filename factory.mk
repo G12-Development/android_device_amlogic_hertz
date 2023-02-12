@@ -32,7 +32,8 @@ NEEDED_IMAGES := \
     dtbo.img \
     vbmeta.img \
     vendor.img \
-    system.img
+    system.img \
+    logo.img
 
 $(INSTALLED_AML_UPGRADE_PACKAGE_TARGET): $(addprefix $(PRODUCT_OUT)/,$(NEEDED_IMAGES)) $(AML_IMAGE_TOOL)
 	$(hide) mkdir -p $(PRODUCT_UPGRADE_OUT)
