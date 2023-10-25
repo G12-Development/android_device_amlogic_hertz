@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021-2023 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -30,6 +30,9 @@ TARGET_AMLOGIC_SOC := gxm
 ## Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
+
+## TEE
+TARGET_HAS_TEE := false
 
 $(call inherit-product, device/amlogic/gx-common/gx.mk)
 $(call inherit-product, vendor/amlogic/hertz/hertz-vendor.mk)
