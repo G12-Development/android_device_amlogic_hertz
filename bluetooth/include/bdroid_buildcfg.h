@@ -1,5 +1,5 @@
 /*
-* Copyright (C) 2021 The LineageOS Project
+* Copyright (C) 2021-2023 The LineageOS Project
 *
 * SPDX-License-Identifier: Apache-2.0
 */
@@ -10,8 +10,6 @@
 #define BTM_DEF_LOCAL_NAME "Hertz"
 
 #define BLE_VND_INCLUDED TRUE
-
-#define BTA_DM_COD {0x20, BTM_COD_MAJOR_AUDIO, BTM_COD_MINOR_SET_TOP_BOX}
 
 #define BTM_BLE_CONN_INT_MIN_DEF     0x18
 #define BTM_BLE_CONN_INT_MAX_DEF     0x28
