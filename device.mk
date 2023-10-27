@@ -11,6 +11,7 @@ PRODUCT_HOST_PACKAGES += \
 ## Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 PRODUCT_PACKAGES += \
+    HertzBluetoothOverlay \
     libbt-vendor
 
 ## Init-Files
