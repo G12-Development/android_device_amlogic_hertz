@@ -23,6 +23,9 @@ TARGET_DHD_VERSION := bcmdhd.100.10.545.x
 PRODUCT_PACKAGES += \
     dhd
 
+# Platform
+TARGET_AMLOGIC_SOC := gxm
+
 ## Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
