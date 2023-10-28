@@ -21,6 +21,9 @@ TARGET_DTB_NAME := hertz_3g
 # GPU
 TARGET_AMLOGIC_GPU_ARCH := midgard
 
+# Kernel
+BOARD_KERNEL_CMDLINE += --cmdline "root=/dev/mmcblk0p18"
+
 # Partitions
 BOARD_PRODUCTIMAGE_PARTITION_SIZE := 134217728
 TARGET_COPY_OUT_PRODUCT := product
