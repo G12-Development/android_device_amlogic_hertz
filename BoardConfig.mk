@@ -24,11 +24,6 @@ TARGET_AMLOGIC_GPU_ARCH := midgard
 # Kernel
 BOARD_KERNEL_CMDLINE += --cmdline "root=/dev/mmcblk0p18"
 
-# Partitions
-BOARD_PRODUCTIMAGE_PARTITION_SIZE := 134217728
-TARGET_COPY_OUT_PRODUCT := product
-BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
-
 ## Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
