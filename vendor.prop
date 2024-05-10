@@ -10,6 +10,9 @@ ro.boot.btmacaddr=22:22:ce:d2:ca:13
 ## Graphics
 ro.opengles.version=196610
 
+## Media
+media.omx.display_mode=1
+
 ## Wi-Fi
 vendor.bcm_wifi=bcm
 
