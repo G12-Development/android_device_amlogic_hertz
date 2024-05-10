@@ -24,6 +24,12 @@ TARGET_DHD_VERSION := bcmdhd.100.10.545.x
 PRODUCT_PACKAGES += \
     dhd
 
+## Media
+ifneq ($(PRODUCT_USE_SW_OMX),true)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml
+endif
+
 # Platform
 TARGET_AMLOGIC_SOC := gxm
 
