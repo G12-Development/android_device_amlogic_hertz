@@ -6,8 +6,3 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_hertz.mk
-
-COMMON_LUNCH_CHOICES := \
-    lineage_hertz-eng \
-    lineage_hertz-user \
-    lineage_hertz-userdebug
