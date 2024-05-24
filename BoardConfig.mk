@@ -23,6 +23,7 @@ TARGET_AMLOGIC_GPU_ARCH := midgard
 
 # Kernel
 BOARD_KERNEL_CMDLINE += --cmdline "root=/dev/mmcblk0p18"
+BOARD_KERNEL_CMDLINE += androidboot.boot_devices=d0074000.emmc
 
 # Partitions
 BOARD_PRODUCTIMAGE_PARTITION_SIZE := 134217728
