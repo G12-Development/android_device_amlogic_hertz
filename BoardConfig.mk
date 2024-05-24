@@ -23,6 +23,7 @@ TARGET_AMLOGIC_GPU_ARCH := midgard
 
 # Kernel
 BOARD_KERNEL_CMDLINE += --cmdline "root=/dev/mmcblk0p18"
+BOARD_KERNEL_CMDLINE += androidboot.boot_devices=d0074000.emmc
 
 ## Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
