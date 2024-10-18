@@ -22,7 +22,5 @@ PRODUCT_MODEL := hertz
 PRODUCT_NAME := lineage_hertz
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=adt3 \
-    PRIVATE_BUILD_DESC="adt3-user 11 RTT1.200909.003.A2 6832896 release-keys"
-
-BUILD_FINGERPRINT := ADT-3/adt3/adt3:11/RTT1.200909.003.A2/6832896:user/release-keys
+    BuildDesc="adt3-user 11 RTT1.200909.003.A2 6832896 release-keys" \
+    BuildFingerprint=ADT-3/adt3/adt3:11/RTT1.200909.003.A2/6832896:user/release-keys
