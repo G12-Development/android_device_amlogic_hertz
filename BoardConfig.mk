@@ -25,6 +25,10 @@ TARGET_AMLOGIC_GPU_ARCH := midgard
 BOARD_KERNEL_CMDLINE += --cmdline "root=/dev/mmcblk0p18"
 BOARD_KERNEL_CMDLINE += androidboot.boot_devices=d0074000.emmc
 
+# Kernel modules
+TARGET_KERNEL_EXT_MODULES := \
+    dhd-driver/bcmdhd.100.10.545.x
+
 # Partitions
 BOARD_PRODUCTIMAGE_PARTITION_SIZE := 134217728
 TARGET_COPY_OUT_PRODUCT := product
