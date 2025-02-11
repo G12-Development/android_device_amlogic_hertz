@@ -29,11 +29,6 @@ BOARD_KERNEL_CMDLINE += androidboot.boot_devices=d0074000.emmc
 TARGET_KERNEL_EXT_MODULES := \
     dhd-driver/bcmdhd.100.10.545.x
 
-# Partitions
-BOARD_PRODUCTIMAGE_PARTITION_SIZE := 134217728
-TARGET_COPY_OUT_PRODUCT := product
-BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
-
 ## Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
